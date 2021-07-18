@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "7d296727-dcd4-47a0-8e6d-579d1d1ad0de",
+		"name": "BillingOrder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read single Billing Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{baseURI}}/15",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{baseURI}}",
+					"path": [
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Billing Order",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{baseURI}}/14",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{baseURI}}",
+					"path": [
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read all Billing Orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{baseURI}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{baseURI}}"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Billing Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"addressLine1\": \"152 The Terrace\",\r\n  \"addressLine2\": \"CBD\",\r\n  \"city\": \"Wellington\",\r\n  \"comment\": \"comments\",\r\n  \"email\": \"abc@gmail.com\",\r\n  \"firstName\": \"Test\",\r\n  \"id\": 0,\r\n  \"itemNumber\": 123,\r\n  \"lastName\": \"Person\",\r\n  \"phone\": \"1234567890\",\r\n  \"state\": \"AL\",\r\n  \"zipCode\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{baseURI}}/",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{baseURI}}",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Billing Order",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"addressLine1\": \"160 The Terrace\",\r\n  \"addressLine2\": \"CBD\",\r\n  \"city\": \"Wellington\",\r\n  \"comment\": \"comments hfkjsdhfkjhs\",\r\n  \"email\": \"jgfjshgf@gmail.com\",\r\n  \"firstName\": \"Test1\",\r\n  \"id\": 0,\r\n  \"itemNumber\": 123,\r\n  \"lastName\": \"Person2\",\r\n  \"phone\": \"1234567890\",\r\n  \"state\": \"AL\",\r\n  \"zipCode\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{baseURI}}/{{id}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{baseURI}}",
+					"path": [
+						"{{id}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
