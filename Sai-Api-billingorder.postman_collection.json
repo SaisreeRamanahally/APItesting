@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "e2cb24ea-d6fa-432f-a5fc-4e191e669f06",
+		"name": "Sai-Api-billingorder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update billingorder",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"addressLine1\": \"456\",\r\n  \"addressLine2\": \"Karori\",\r\n  \"city\": \"Welliongton\",\r\n  \"comment\": \"msg me\",\r\n  \"email\": \"as@gmail.com\",\r\n  \"firstName\": \"hello\",\r\n  \"id\": 0,\r\n  \"itemNumber\": 789,\r\n  \"lastName\": \"fhgjh\",\r\n  \"phone\": \"1234567893\",\r\n  \"state\": \"AL\",\r\n  \"zipCode\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{path}}/9",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{path}}",
+					"path": [
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete billingorder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"addressLine1\": \"123\",\r\n  \"addressLine2\": \"Kelburn\",\r\n  \"city\": \"auckland\",\r\n  \"comment\": \"no\",\r\n  \"email\": \"as@gmail.com\",\r\n  \"firstName\": \"hi\",\r\n  \"id\": 0,\r\n  \"itemNumber\": 789,\r\n  \"lastName\": \"fhgjh\",\r\n  \"phone\": \"1234567893\",\r\n  \"state\": \"AL\",\r\n  \"zipCode\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{path}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{path}}"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create billingorder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"addressLine1\": \"123\",\r\n  \"addressLine2\": \"Kelburn\",\r\n  \"city\": \"auckland\",\r\n  \"comment\": \"no\",\r\n  \"email\": \"as@gmail.com\",\r\n  \"firstName\": \"hi\",\r\n  \"id\": 0,\r\n  \"itemNumber\": 789,\r\n  \"lastName\": \"fhgjh\",\r\n  \"phone\": \"1234567893\",\r\n  \"state\": \"AL\",\r\n  \"zipCode\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}:{{port}}{{path}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{path}}"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "single id read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{path}}/7",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{path}}",
+					"path": [
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read all billingorder",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{path}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{path}}"
+				}
+			},
+			"response": []
+		}
+	]
+}
